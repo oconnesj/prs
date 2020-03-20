@@ -32,3 +32,25 @@ create table User (
 	SubmittedDate			datetime			not null,
 	ReasonForRejection		varchar(100)	   	null
     );
+    
+    create table LineItem (
+    ID						int					primary key auto_increment,
+	RequestID				int					not null,
+    ProductID				int					not null,
+	Quanity					int					not null
+    );
+    
+    create table Product (
+    ID						int					primary key auto_increment,
+    VendorID				int					not null,
+    PartNumber				varchar(50)			not null,
+    Name					varchar(150)		not null,
+    Price					decimal(10,2)		not null,
+    Unit					varchar(255)		null,
+    PhotoPath				varchar(255)		null
+    );
+    
+    
+    create table Vendor (
+	
+	
