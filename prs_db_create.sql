@@ -15,9 +15,11 @@ create table User (
     PhoneNumber		varchar(12)     not null,
     Email			varchar(75)		not null,
     isReviewer		tinyint			not null,
-    isAdmin			tinyint			not null
+    isAdmin			tinyint			not null,
+    constraint uname unique (Username)
 	);
-    
+      
+      -- constraint act_mov unique (actorID, movieID)*/
     
  create table Request (
  
@@ -44,7 +46,8 @@ create table User (
     ProductID				int					not null,
 	Quanity					int					not null,
     foreign key (ProductID) references Product(ID),
-    foreign key (RequestID) references Request(ID)
+    foreign key (RequestID) references Request(ID),
+    constraint req_pdt unique (RequestID, ProductID)
     );
     
     create table Product (
@@ -55,7 +58,8 @@ create table User (
     Price					decimal(10,2)		not null,
     Unit					varchar(255)		null,
     PhotoPath				varchar(255)		null,
-    foreign key (VendorID) references Vendor(ID)
+    foreign key (VendorID) references Vendor(ID),
+    constraint vendor_part unique (VendorID, PartNumber)
     );
     
     
@@ -68,7 +72,8 @@ create table User (
     State					varchar(2)			not null,
     Zip						varchar(5)			not null,
     PhoneNumber				varchar(12)			not null,
-    Email					varchar(100)		not null
+    Email					varchar(100)		not null,
+    constraint vcode unique (Code)
     );
     
     
