@@ -20,8 +20,23 @@ create table User (
 	);
       
       -- constraint act_mov unique (actorID, movieID)*/
+      
+create table Vendor (
+    ID						int					primary key auto_increment,
+    Code					varchar(10)			not null,
+    Name					varchar(255)		not null,
+    Address					varchar(255)		not null,
+    City					varchar(255)		not null,
+    State					varchar(2)			not null,
+    Zip						varchar(5)			not null,
+    PhoneNumber				varchar(12)			not null,
+    Email					varchar(100)		not null,
+    constraint vcode unique (Code)
+    );
     
- create table Request (
+        
+    
+create table Request (
  
 	ID						int					primary key auto_increment,
 	UserID					int					not null,
@@ -36,21 +51,7 @@ create table User (
     foreign key (UserID) references User(ID)
     );
     
-    /*	foreign key (actorID) references actor(ID),
-	foreign key (movieID) references movie(ID),
-    constraint act_mov unique (actorID, movieID)*/
-    
-    create table LineItem (
-    ID						int					primary key auto_increment,
-	RequestID				int					not null,
-    ProductID				int					not null,
-	Quanity					int					not null,
-    foreign key (ProductID) references Product(ID),
-    foreign key (RequestID) references Request(ID),
-    constraint req_pdt unique (RequestID, ProductID)
-    );
-    
-    create table Product (
+create table Product (
     ID						int					primary key auto_increment,
     VendorID				int					not null,
     PartNumber				varchar(50)			not null,
@@ -63,20 +64,23 @@ create table User (
     );
     
     
-    create table Vendor (
+    
+    /*	foreign key (actorID) references actor(ID),
+	foreign key (movieID) references movie(ID),
+    constraint act_mov unique (actorID, movieID)*/
+    
+create table LineItem (
     ID						int					primary key auto_increment,
-    Code					varchar(10)			not null,
-    Name					varchar(255)		not null,
-    Address					varchar(255)		not null,
-    City					varchar(255)		not null,
-    State					varchar(2)			not null,
-    Zip						varchar(5)			not null,
-    PhoneNumber				varchar(12)			not null,
-    Email					varchar(100)		not null,
-    constraint vcode unique (Code)
+	RequestID				int					not null,
+    ProductID				int					not null,
+	Quanity					int					not null,
+    foreign key (ProductID) references Product(ID),
+    foreign key (RequestID) references Request(ID),
+    constraint req_pdt unique (RequestID, ProductID)
     );
     
-    
+ 
+ 
     
 	
 	
