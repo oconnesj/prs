@@ -19,6 +19,7 @@ create table User (
     constraint uname unique (Username)
 	);
       
+      -- for tinyint values, 0 = false or no access and 1 = access -- 
       -- constraint act_mov unique (actorID, movieID)*/
       
 create table Vendor (
@@ -79,8 +80,12 @@ create table LineItem (
     constraint req_pdt unique (RequestID, ProductID)
     );
     
- 
- 
-    
+ -- Inserts for User Table -- 
+ 	insert into User(ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, isReviewer, isAdmin)
+		values	(1, 'oconnesj', 'Alamo#20', 'Sam', 'O''Connell', '513-426-0411', 'samuel.oconnell1493@gmail.com', 1,1 );
+	insert into User(ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, isReviewer, isAdmin)
+		values	(2,'masilibr', 'Remember4', 'Blake', 'Maislin', '513-444-4444', 'Blake.Maislin@hotmail.com' , 1,0);
+	insert into	User(ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, isReviewer, isAdmin)
+		values	(3,'isaacsd', 'Hammertime', 'Darryl', 'Isaacs', '800-800-8888', 'Thehammerlawyer@law.com' ,0,1)
 	
 	
