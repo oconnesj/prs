@@ -94,4 +94,8 @@ Oakley cincinnati kroger  is krmarcinci */
 	insert into Vendor (ID, Code, Name, Address, City, State, Zip, PhoneNumber, Email)
 		values	(1, 'krmarcinci', 'Kroger', '4613 Marbug Ave', 'Cincinnati', 'OH', '45209', '513-782-5100', 'customerservice@kroger.com' );
 	insert into Vendor (ID, Code, Name, Address, City, State, Zip, PhoneNumber, Email)
-		values	(2, 'krpaxcinci', 'Kroger', '3760 Paxton Ave', 'Cincinnati', 'OH', '45209', '513-871-4142', 'customerservice@kroger.com' );			
+		values	(2, 'krpaxcinci', 'Kroger', '3760 Paxton Ave', 'Cincinnati', 'OH', '45209', '513-871-4142', 'customerservice@kroger.com' );	
+	insert into Vendor (ID, Code, Name, Address, City, State, Zip, PhoneNumber, Email)
+		values (3, 'mamadcinci', 'Mad Tree Brewing', '3301 Madison Rd', 'Cincinnati', 'OH', '45209', '513-836-8733', 'owner@madtreebrewing.com');
+	insert into Vendor (ID, Code, Name, Address, City, State, Zip, PhoneNumber, Email)
+		values	(4, 'skcarnewpo', 'Skyline Chili', '35 Carothers Rd', 'Newport', 'KY', '45209', '859-431-1001', 'makeitathreeway@gmail.com');
