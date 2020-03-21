@@ -101,10 +101,26 @@ Oakley cincinnati kroger  is krmarcinci */
 		values	(4, 'skcarnewpo', 'Skyline Chili', '35 Carothers Rd', 'Newport', 'KY', '45209', '859-431-1001', 'makeitathreeway@gmail.com');
         
   -- Product Table Inserts --
-  
+			-- inserts for vendor kroger --
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
     	values (1,1,'0089162700901', 'evol. Fire Grilled Steak Bowl', 3.99,' ', ' ');
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (2,1,'0020202400000', 'Beef Choice Boneless Ribeye Steak', 13.99,' ', ' ');        
-        
-        
+    	values (2,1,'0020202400000', 'Beef Choice Boneless Ribeye Steak', 13.99,' ', ' ');     
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (3,1,'0000000003283', 'Apple - Honeycrisp', 1.99,' ', ' ');         
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (4,1,'0000000004011', 'Banana', .49,' ', ' '); 
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (5,1,' 0007199009511', 'Blue Moon Belgian White Belgian Style Wheat Ale Beer', 9.99 ,' ', ' ');  
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (6,1,'0081989801024', 'Back to Nature Multigrain Flax Seed Crackers', 2.50,' ', ' ');          
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (7,1,'0001111050204', 'Kroger® Shredded Mexican Style Blend Cheese', 1.99,' ', ' '); 
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (8,1,'0001111001649', 'Kroger® Natural Creamy Peanut Butter', 1.79,' ', ' ');  
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (9,1,'0000980089500', 'Nutella Hazelnut with Cocoa Spread', 1.99,' ', ' ');
+       insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (10,1,'0003377601189', 'Earth Balance® Soy Free Buttery Spread', 3.99,' ', ' ');     
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (11,1,'0007218063052', 'Freschetta Pepperoni Brick Oven Crust Pizza', 4.99,' ', ' ');      
