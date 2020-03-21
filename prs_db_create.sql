@@ -86,6 +86,12 @@ create table LineItem (
 	insert into User(ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, isReviewer, isAdmin)
 		values	(2,'masilibr', 'Remember4', 'Blake', 'Maislin', '513-444-4444', 'Blake.Maislin@hotmail.com' , 1,0);
 	insert into	User(ID, UserName, Password, FirstName, LastName, PhoneNumber, Email, isReviewer, isAdmin)
-		values	(3,'isaacsd', 'Hammertime', 'Darryl', 'Isaacs', '800-800-8888', 'Thehammerlawyer@law.com' ,0,1)
-	
-	
+		values	(3,'isaacsd', 'Hammertime', 'Darryl', 'Isaacs', '800-800-8888', 'Thehammerlawyer@law.com' ,0,1);
+        
+-- Vendor table inserts  --
+/* Code is First two letters of company name + firs 3 of street + first 5 of city  name ex 
+Oakley cincinnati kroger  is krmarcinci */
+	insert into Vendor (ID, Code, Name, Address, City, State, Zip, PhoneNumber, Email)
+		values	(1, 'krmarcinci', 'Kroger', '4613 Marbug Ave', 'Cincinnati', 'OH', '45209', '513-782-5100', 'customerservice@kroger.com' );
+	insert into Vendor (ID, Code, Name, Address, City, State, Zip, PhoneNumber, Email)
+		values	(2, 'krpaxcinci', 'Kroger', '3760 Paxton Ave', 'Cincinnati', 'OH', '45209', '513-871-4142', 'customerservice@kroger.com' );			
