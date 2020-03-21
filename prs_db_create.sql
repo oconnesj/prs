@@ -103,24 +103,39 @@ Oakley cincinnati kroger  is krmarcinci */
   -- Product Table Inserts --
 			-- inserts for vendor kroger --
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (1,1,'0089162700901', 'evol. Fire Grilled Steak Bowl', 3.99,' ', ' ');
+    	values (1,1,'0089162700901', 'evol. Fire Grilled Steak Bowl', 3.99,'1 bowl ', ' ');
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (2,1,'0020202400000', 'Beef Choice Boneless Ribeye Steak', 13.99,' ', ' ');     
+    	values (2,1,'0020202400000', 'Beef Choice Boneless Ribeye Steak', 13.99,'1 steak 13.99/pound  ', ' ');     
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (3,1,'0000000003283', 'Apple - Honeycrisp', 1.99,' ', ' ');         
+    	values (3,1,'0000000003283', 'Apple - Honeycrisp', 1.99,'per pound ', ' ');         
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (4,1,'0000000004011', 'Banana', .49,' ', ' '); 
+    	values (4,1,'0000000004011', 'Banana', .49,'per pound ', ' '); 
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (5,1,' 0007199009511', 'Blue Moon Belgian White Belgian Style Wheat Ale Beer', 9.99 ,' ', ' ');  
+    	values (5,1,'0007199009511', 'Blue Moon Belgian White Belgian Style Wheat Ale Beer', 9.99 ,'6 bottles / 12 fl oz', ' ');  
+    
+        
+        -- inserts for vendor Graeters --
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (6,1,'0081989801024', 'Back to Nature Multigrain Flax Seed Crackers', 2.50,' ', ' ');          
+    	values (6,2,'pintBlkCherryCC', 'Black Cherry Chocolate Chip ', 4.99,'1 pint ', ' ');
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (7,1,'0001111050204', 'Kroger® Shredded Mexican Style Blend Cheese', 1.99,' ', ' '); 
+    	values (7,2,'pintMintCookCrm', 'Mint Cookies & Cream ', 4.99,'1 pint ', ' ');
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (8,1,'0001111001649', 'Kroger® Natural Creamy Peanut Butter', 1.79,' ', ' ');  
+    	values (8,2,'pintCookieCream', 'Cookie & Cream', 4.99,'1 pint ', ' ');
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (9,1,'0000980089500', 'Nutella Hazelnut with Cocoa Spread', 1.99,' ', ' ');
-       insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (10,1,'0003377601189', 'Earth Balance® Soy Free Buttery Spread', 3.99,' ', ' ');     
+    	values (9,2,'pintViennaCoffe', 'Vienna Coffee ', 4.99,'1 pint ', ' '); 
+        
+    -- inserts for vendor Mad Tree Brewing    
+  insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (10,4,'ciderApple42Mile', '42 Mile Hard Apple Cider', 7.00 ,'1 pint ', ' '); 
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (11,1,'0007218063052', 'Freschetta Pepperoni Brick Oven Crust Pizza', 4.99,' ', ' ');      
+    	values (11,4,'beerRyeBRTSciGuy', 'Bill Rye the Science Guy', 4.99,'16oz Can ', ' ');
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (12,3,'beerIpaPsyHopathy', 'PsycHOPathy ', 6.00,'1 pint ', ' ');
+        
+	-- inserts for Vendor Skyline Chili
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (13,4,'ciderApple42Mile', '42 Mile Hard Apple Cider', 7.00 ,'1 pint ', ' '); 
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (14,4,'beerRyeBRTSciGuy', 'Bill Rye the Science Guy', 7.00,'16oz Can ', ' ');
+    insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+    	values (15,4,'pintBlkCherryCC', 'Black Cherry Chocolate Chip ', 4.99,'1 pint ', ' '); 
