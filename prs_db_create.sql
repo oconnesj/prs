@@ -126,16 +126,16 @@ Oakley cincinnati kroger  is krmarcinci */
         
     -- inserts for vendor Mad Tree Brewing    
   insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (10,4,'ciderApple42Mile', '42 Mile Hard Apple Cider', 7.00 ,'1 pint ', ' '); 
+    	values (10,3,'ciderApple42Mile', '42 Mile Hard Apple Cider', 7.00 ,'1 pint ', ' '); 
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (11,4,'beerRyeBRTSciGuy', 'Bill Rye the Science Guy', 4.99,'16oz Can ', ' ');
+    	values (11,3,'beerRyeBRTSciGuy', 'Bill Rye the Science Guy', 4.99,'16oz Can ', ' ');
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
     	values (12,3,'beerIpaPsyHopathy', 'PsycHOPathy ', 6.00,'1 pint ', ' ');
         
 	-- inserts for Vendor Skyline Chili
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (13,4,'ciderApple42Mile', '42 Mile Hard Apple Cider', 7.00 ,'1 pint ', ' '); 
+    	values (13,4,'chiliRegular3Way', '3-Way', 10.99 ,'1 Regular Size ', ' '); 
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (14,4,'beerRyeBRTSciGuy', 'Bill Rye the Science Guy', 7.00,'16oz Can ', ' ');
+    	values (14,4,'chiliRegular4Way', '4-Way', 11.38,'1 Regular Size', ' ');
     insert into Product (ID, VendorID, PartNumber, Name, Price, Unit, PhotoPath)
-    	values (15,4,'pintBlkCherryCC', 'Black Cherry Chocolate Chip ', 4.99,'1 pint ', ' '); 
+    	values (15,4,'chiliRegular5Way', '5-Way', 13.00,'1 Regular Size', ' '); 
